@@ -12,7 +12,7 @@ var intervalIntersection = function (A, B) {
       const start = Math.max(aStart, bStart)
       const end = Math.min(aEnd, bEnd)
       if (start <= end) res.push([start,end])
-      if (aEnd < bStart) continue
+      if (aEnd < bStart) break
     }
   }
   return res
