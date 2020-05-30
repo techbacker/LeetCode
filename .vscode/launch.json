@@ -13,7 +13,7 @@
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/leetCode/338/338.js"
+      "program": "${workspaceFolder}/leetCode/973/973.js"
     }
   ]
 }
