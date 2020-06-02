@@ -7,13 +7,10 @@
 
 
     {
-      "type": "node",
+      "type": "python",
       "request": "launch",
       "name": "Launch Program",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "program": "${workspaceFolder}/leetCode/973/973.js"
+      "program": "${workspaceFolder}/leetCode/119/119-non-recursion.py"
     }
   ]
 }
