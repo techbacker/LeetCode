@@ -10,7 +10,7 @@
       "type": "python",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/leetCode/119/119-non-recursion.py"
+      "program": "${workspaceFolder}/leetCode/50/50.py"
     }
   ]
 }
