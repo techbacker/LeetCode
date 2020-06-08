@@ -10,7 +10,7 @@
       "type": "python",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/leetCode/50/50.py"
+      "program": "${workspaceFolder}/leetCode/912/912.py"
     }
   ]
 }
