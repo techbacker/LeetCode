@@ -1,3 +1,3 @@
-haha = [1,2,3]
-print(haha[1:3])
+haha = [1,2,3,4,5,6,7,8,9,0]
+print(haha[-2::-2])
 print(haha[:])
