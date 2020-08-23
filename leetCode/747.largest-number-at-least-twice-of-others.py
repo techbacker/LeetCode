@@ -12,12 +12,15 @@ class Solution:
         if len(nums) == 1:
             return largest_num_index
 
-        def findLargestIndex(nums):
-            nonlocal largest_num_index
-            for i in range(0, len(nums)):
-                if nums[i] > nums[largest_num_index]:
-                    largest_num_index = i
-        findLargestIndex(nums)
+        # def findLargestIndex(nums):
+        #     nonlocal largest_num_index
+        #     for i in range(0, len(nums)):
+        #         if nums[i] > nums[largest_num_index]:
+        #             largest_num_index = i
+        # findLargestIndex(nums)
+
+        # use default python find max
+        largest_num_index = nums.index(max(nums))
 
         for i in range(0, len(nums)):
             if i != largest_num_index and nums[largest_num_index] // 2 < nums[i]:
