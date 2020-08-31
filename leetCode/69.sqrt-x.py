@@ -6,19 +6,25 @@
 # @lc code=start
 class Solution:
     def mySqrt(self, x: int) -> int:
-        cur = x // 2
-        if cur * cur == x:
-            return cur
-        power = 0
-        while cur * cur > x:
-            cur = cur // 2
-        print('cur', cur)
-        while power <= x:
-            power = cur * cur
-            cur += 1
-        return cur - 2
+        # binary search
+        def binary_serach(x) -> int:
+            if x < 2:
+                return x
+            left, right = 0, x // 2
 
+            while left <= right:
+                pivot = left + (right - left) // 2
+                num = pivot * pivot
+                if num == x:
+                    return pivot
+                elif num < x:
+                    left = pivot + 1
+                elif num > x:
+                    right = pivot - 1
+
+            return right
+        return binary_serach(x)
 s = Solution()
-print(s.mySqrt(1))
+print(s.mySqrt(30))
 # @lc code=end
 
