@@ -6,7 +6,7 @@
 from typing import List
 # @lc code=start
 class Solution:
-    ### check if mid can be maxium subarray sum
+    ### check if mid can be maximum subarray sum
     def check(self, mid, array, n, K):
         count = 0
         sum = 0
